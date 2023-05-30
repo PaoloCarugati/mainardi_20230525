@@ -1,0 +1,19 @@
+<br>
+<h4>Brani</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th class="text-end">Prezzo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of Brani">
+            <td>{{ m.id }}</td>
+            <td>{{ m.nome }}</td>
+            <td class="text-end"><i>€ {{ m.prezzo }}</i></td>
+        </tr>
+    </tbody>
+</table>
